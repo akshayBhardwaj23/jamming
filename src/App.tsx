@@ -3,6 +3,7 @@ import TrackList from "./components/TrackList";
 import NavBar from "./components/NavBar";
 import { useEffect, useState } from "react";
 import PlayList from "./components/PlayList";
+import Search from "./components/Search";
 
 //interface for Tracks details
 interface Tracks {
@@ -42,8 +43,8 @@ function App() {
         <GridItem area="nav">
           <NavBar />
         </GridItem>
-        <GridItem area="search" bg="red">
-          Search
+        <GridItem area="search">
+          <Search />
         </GridItem>
         <GridItem area="side1">
           <VStack>
